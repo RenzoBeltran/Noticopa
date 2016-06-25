@@ -1,2 +1,2 @@
 collection :@tournaments
-attributes :id, :name,:image_url
+attributes :id, :name, :image_url
