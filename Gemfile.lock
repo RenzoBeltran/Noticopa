@@ -76,6 +76,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    pg (0.18.4)
     pkg-config (1.1.7)
     rabl-rails (0.4.3)
       activesupport (>= 3.1)
@@ -153,6 +154,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rabl-rails
   rails (= 4.2.6)
   sass-rails (~> 5.0)
