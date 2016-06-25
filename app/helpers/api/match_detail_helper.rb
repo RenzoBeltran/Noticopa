@@ -1,0 +1,2 @@
+module Api::MatchDetailHelper
+end
