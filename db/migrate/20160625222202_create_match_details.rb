@@ -5,8 +5,8 @@ class CreateMatchDetails < ActiveRecord::Migration
       t.string :referee
       t.boolean :time_extra
       t.integer :goals_pk
-      t.references :Match, index: true, foreign_key: true
-      t.references :Team, index: true, foreign_key: true
+      t.references :match, index: true, foreign_key: true
+      t.references :team, index: true, foreign_key: true
 
       t.timestamps null: false
     end
