@@ -1,4 +1,36 @@
 Rails.application.routes.draw do
+  namespace :api do
+    get 'team/index'
+    get 'team/create'
+    get 'team/show'
+    get 'team/update'
+    get 'team/destroy'
+  end
+
+  namespace :api do
+    get 'match_detail/index'
+    get 'match_detail/create'
+    get 'match_detail/show'
+    get 'match_detail/update'
+    get 'match_detail/destroy'
+  end
+
+  namespace :api do
+    get 'match/index'
+    get 'match/create'
+    get 'match/show'
+    get 'match/update'
+    get 'match/destroy'
+  end
+
+  namespace :api do
+    get 'tournament/index'
+    get 'tournament/create'
+    get 'tournament/show'
+    get 'tournament/update'
+    get 'tournament/destroy'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
