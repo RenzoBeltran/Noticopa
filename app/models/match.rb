@@ -1,3 +1,4 @@
 class Match < ActiveRecord::Base
-  belongs_to :Tournament
+	has_many :match_details
+	belongs_to :tournament
 end

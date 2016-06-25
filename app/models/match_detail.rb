@@ -1,4 +1,4 @@
 class MatchDetail < ActiveRecord::Base
-  belongs_to :Match
-  belongs_to :Team
+  belongs_to :match
+  belongs_to :team
 end

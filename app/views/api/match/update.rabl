@@ -1,2 +1,2 @@
-<h1>Api::Match#update</h1>
-<p>Find me in app/views/api/match/update.html.erb</p>
+object :@match
+attributes :id, :date, :stadium, :tournament_id, :created_at, :updated_at
