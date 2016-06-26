@@ -1,2 +1,2 @@
 collection :@matches
-attributes :id, :date, :stadium, :tournament_id
+attributes :id, :date, :stadium,:referee,:name, :resultado, :tournament_id

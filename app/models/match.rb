@@ -17,4 +17,13 @@ class Match < ActiveRecord::Base
 	def second_goals
 		self.match_details.second.goals rescue nil
 	end	
+
+	def image_url_1
+	self.teams.first.image_url rescue nil
+	end
+
+	def image_url_2
+	self.teams.second.image_url rescue nil
+	end
+	
 end
