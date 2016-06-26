@@ -18,14 +18,14 @@ ActiveRecord::Schema.define(version: 20160625222202) do
     t.string   "referee"
     t.boolean  "time_extra"
     t.integer  "goals_pk"
-    t.integer  "Match_id"
-    t.integer  "Team_id"
+    t.integer  "match_id"
+    t.integer  "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "match_details", ["Match_id"], name: "index_match_details_on_Match_id"
-  add_index "match_details", ["Team_id"], name: "index_match_details_on_Team_id"
+  add_index "match_details", ["match_id"], name: "index_match_details_on_match_id"
+  add_index "match_details", ["team_id"], name: "index_match_details_on_team_id"
 
   create_table "matches", force: :cascade do |t|
     t.date     "date"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20160625222202) do
     t.datetime "updated_at",    null: false
   end
 
-  add_index "matches", ["tournament_id"], name: "index_matches_on_Tournament_id"
+  add_index "matches", ["tournament_id"], name: "index_matches_on_tournament_id"
 
   create_table "teams", force: :cascade do |t|
     t.string   "name"
