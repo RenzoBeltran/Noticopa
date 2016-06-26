@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20160625222202) do
   create_table "matches", force: :cascade do |t|
     t.date     "date"
     t.string   "stadium"
-    t.integer  "Tournament_id"
+    t.integer  "tournament_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
 
-  add_index "matches", ["Tournament_id"], name: "index_matches_on_Tournament_id"
+  add_index "matches", ["tournament_id"], name: "index_matches_on_Tournament_id"
 
   create_table "teams", force: :cascade do |t|
     t.string   "name"
