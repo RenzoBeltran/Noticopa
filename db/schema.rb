@@ -11,11 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160625222202) do
+ActiveRecord::Schema.define(version: 20160626005735) do
 
   create_table "match_details", force: :cascade do |t|
     t.integer  "goals"
-    t.string   "referee"
     t.boolean  "time_extra"
     t.integer  "goals_pk"
     t.integer  "match_id"
@@ -33,6 +32,9 @@ ActiveRecord::Schema.define(version: 20160625222202) do
     t.integer  "tournament_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "referee"
+    t.string   "name"
+    t.string   "resultado"
   end
 
   add_index "matches", ["tournament_id"], name: "index_matches_on_tournament_id"
@@ -41,6 +43,7 @@ ActiveRecord::Schema.define(version: 20160625222202) do
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "image_url"
   end
 
   create_table "tournaments", force: :cascade do |t|

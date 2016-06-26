@@ -5,7 +5,7 @@ class Api::MatchController < ApplicationController
 
 	def create
 		@match = Match.new(date: params[:date],
-			stadium: params[:stadium], tournament_id: params[:tournament_id])
+			stadium: params[:stadium], referee: params[:referee], tournament_id: params[:tournament_id])
 		@match.save
 
 	end
@@ -20,7 +20,7 @@ class Api::MatchController < ApplicationController
 
 	def update
 		@match = Match.find(params[:match_id])
-		render json: @match.update(date: params[:date], stadium: params[:stadium], tournament_id: params[:tournament_id])
+		render json: @match.update(date: params[:date], stadium: params[:stadium], referee: params[:referee], tournament_id: params[:tournament_id])
 
 	end
 
